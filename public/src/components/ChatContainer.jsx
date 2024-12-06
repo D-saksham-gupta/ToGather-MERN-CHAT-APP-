@@ -20,7 +20,7 @@ export default function ChatContainer({ currentChat, socket }) {
       to: currentChat._id,
     });
     setMessages(response.data);
-  }, [currentChat]);
+  }, [currentChat, messages]);
 
   useEffect(() => {
     const getCurrentChat = async () => {
@@ -31,7 +31,7 @@ export default function ChatContainer({ currentChat, socket }) {
       }
     };
     getCurrentChat();
-  }, [currentChat]);
+  }, [currentChat, messages]);
 
   const handleSendMsg = async (msg) => {
     const data = await JSON.parse(
