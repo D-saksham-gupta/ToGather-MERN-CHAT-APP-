@@ -1,4 +1,4 @@
-export const host = "https://to-gather-mern-chat-app-7qs8.vercel.app";
+export const host = "https://togather-mern-chat-app-backend.onrender.com";
 export const loginRoute = `${host}/api/auth/login`;
 export const registerRoute = `${host}/api/auth/register`;
 export const logoutRoute = `${host}/api/auth/logout`;
